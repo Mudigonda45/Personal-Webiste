@@ -1,0 +1,36 @@
+/* .Body{
+    background-color: blue;
+} */
+h2 {
+  text-align:center;
+}
+.skills-container {
+    max-width: 800px;
+    margin: auto;
+   
+  }
+  
+  .skill {
+    margin-bottom: 20px;
+    
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-percentage {
+    height: 20px;
+    background-color: #4caf50; /* Green color */
+  }
+  
+  .percentage-label {
+    text-align: right;
+  }
+  

@@ -1,0 +1,13 @@
+<div class="Body">
+<h2>skills Me</h2>
+
+<div class="skills-container">
+  <div *ngFor="let skill of skills" class="skill"> 
+    <div class="skill-name">{{ skill.name }}</div>
+    <div class="skill-bar">
+      <div class="skill-percentage" [style.width.%]="skill.percentage"></div>
+    </div>
+    <div class="percentage-label">{{ skill.percentage }}%</div>
+  </div>
+</div>
+</div>

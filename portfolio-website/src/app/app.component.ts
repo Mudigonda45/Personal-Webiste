@@ -6,15 +6,16 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { HeaderComponent } from "./header/header.component";
 import { EducationComponent } from "./education/education.component";
 import { FooterComponent } from "./footer/footer.component";
-import { ParticlesComponent } from "./particles/particles.component";
+
 import { TimelineComponent } from "./timeline/timeline.component";
 import { HeroComponent } from "./hero/hero.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { ContactComponent } from "./contact/contact.component";
+import { HomeComponent } from "./home/home.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FooterComponent, SkillsComponent, ProjectsComponent, TimelineComponent,  NavbarComponent],
+  imports: [RouterOutlet, FooterComponent, SkillsComponent, ProjectsComponent, TimelineComponent, NavbarComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

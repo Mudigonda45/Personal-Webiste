@@ -1,15 +1,15 @@
 .footer {
-    background-color: #333; /* Dark background */
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
     color: white; /* White text */
     text-align: center; /* Center text */
-    padding: 5px; /* Reduced padding */
+    padding: 5px; /* Reduced padding for a more compact look */
     position: relative; /* Positioning context */
     bottom: 0; /* Stick to the bottom */
     width: 100%; /* Full width */
-    font-size: 0.9em;
-     /* Slightly smaller font size */
-     line-height: 1.2; /* Adjust line height for tighter spacing */
-
+    font-size: 0.8em; /* Smaller font size */
+    line-height: 1.1; /* Adjust line height for tighter spacing */
+    backdrop-filter: blur(10px); /* Blur effect on the background */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Optional border for separation */
 }
 
 .footer a {

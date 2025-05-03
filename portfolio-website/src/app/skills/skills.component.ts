@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component ,AfterViewInit} from '@angular/core';
 
 interface Skill {
   name: string;
@@ -11,11 +11,21 @@ interface Skill {
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
-export class SkillsComponent {
-  skills: Skill[] = [
-    { name: 'Angular', percentage: 85 },
-    { name: 'Java Spring Boot', percentage: 85 },
-    { name: 'SQL', percentage: 80 },
-    { name: 'Git', percentage: 90 }
-  ];
+export class SkillsComponent implements AfterViewInit  {
+  skills = [
+    { name: 'HTML', percentage: 90 },
+    { name: 'CSS', percentage: 80 },
+    { name: 'JavaScript', percentage: 70 },
+    // Add more skills as needed
+];
+
+ngAfterViewInit() {
+    // Trigger animations after view initialization
+    setTimeout(() => {
+        const skillBars = document.querySelectorAll('.skill-percentage');
+        skillBars.forEach((bar) => {
+            bar.classList.add('flowing'); // Add the flowing class to trigger animation
+        });
+    }, 100); // Delay slightly to ensure elements are rendered
+}
 }

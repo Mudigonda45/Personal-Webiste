@@ -17,6 +17,6 @@ export class ProjectsComponent {
     { title: 'Project 2', gifUrl: 'assets/ezgif.com-gif-maker.gif', link: 'https://mudigonda45.github.io/MohanSaiMudigonda/' },
     { title: 'Project 3', gifUrl: 'assets/ezgif.com-gif-maker.gif', link: 'https://mudigonda45.github.io/MohanSaiMudigonda/' },
     { title: 'Project 4', gifUrl: 'assets/ezgif.com-gif-maker.gif', link: 'https://mudigonda45.github.io/MohanSaiMudigonda/' },
-   
+    
   ];
 }

@@ -3,15 +3,17 @@ h2 {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
   gap: 20px; /* Space between columns */
 }
 
 .grid-item {
   background-color: #fff; /* Background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  padding: 10px;
+  padding: 20px; /* Increased padding for larger items */
   border-radius: 8px; /* Rounded corners */
+  min-height: 200
+  x; /* Minimum height for each grid item */
 }
 
 .grid-item img {
